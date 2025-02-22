@@ -1,0 +1,20 @@
+/* bugSolution.css */
+.container {
+  background-color: lightgray;
+}
+
+.container .inner {
+  background-color: lightblue; /* More specific than .inner */
+}
+
+.container .inner .element {
+  background-color: yellow; /* Most specific */
+}
+
+/* or using !important (use sparingly) */
+.inner {
+  background-color: lightgreen !important; /* Override the previous style */
+}
+.element {
+  background-color: red !important; /* highest priority */
+}
